@@ -1,0 +1,46 @@
+<div class="body">
+    <section class="header articles">
+        <h1>ARTIKEL</h1>
+        <h1>KAMI</h1>
+    </section>
+    
+    <div class="container my-5">
+        <!-- <h1 class="title-struktur mb-5">Artikel Terbaru</h1> -->
+        <div class="row">   
+            <div class="col"></div>
+        </div>
+    </div>
+    
+        
+    <!-- <div class="container"> -->
+        <div class="band">
+            <% artikelUtama.forEach(artikel => { %>
+                <div class="item-1">
+                <a href="articles/<%= artikel.judul %>" class="card-article">
+                    <div class="thumb" style="background-image: url(./uploads/images/<%= artikel.thumbnail %>);"></div>
+                    <article>
+                    <h1><%= artikel.judul %> </h1>
+                    <span><i class="fas fa-calendar-alt mr-2"></i> <%= artikel.tanggalDibuat %> </span>
+                    </article>
+                </a>
+                </div>
+            <% }) %>
+
+            <% artikels.forEach(artikel => { %>
+                <div class="item-2">
+                <a href="articles/<%= artikel.judul %>" class="card-article">
+                    <div class="thumb" style="background-image: url(./uploads/images/<%= artikel.thumbnail %>);"></div> 
+                    <article>
+                    <h1><%= artikel.judul %> </h1>
+                    <span> <i class="fas fa-calendar-alt mr-2"></i> <%= artikel.tanggalDibuat %> </span>
+                    </article>
+                </a>
+                </div>
+            <% }) %>
+
+        </div>
+    <!-- </div> -->
+
+     
+    </div>
+    

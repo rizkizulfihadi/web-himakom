@@ -1,0 +1,60 @@
+
+    <div class="container">
+    <% if (!artikel) { %>
+     <div class="alert alert-danger my-5">
+        <h1 class="text-dark">404 Not Found Artikel tidak ditemukan</h1>
+        <a href="/">&laquo; Kembali </a>
+     </div>
+    <% }else{ %>
+    <main class="site-content">
+        <header class="text-light align-items-center d-flex text-center" style="background: linear-gradient(rgba(55, 55, 55, .6), rgba(55, 55, 55, .6) ), url(/uploads/images/<%= artikel.thumbnail %>) ; background-size: cover; background-position: center; height: 70vh; width: 100%;">
+            <div class="container">
+                <div class="row">
+                
+                    <div class="col-12 col-lg-10 m-auto align-items-center">
+                        <h2 class="text-light d-inline"><%= artikel.judul %></h2>
+                        
+                    </div>
+                  
+                </div>
+                
+            </div>
+        </header>
+        <div class="container">
+        <p class="small text-monospace p-2">dibuat pada <%= artikel.tanggalDibuat %>  <br> oleh <%= artikel.penulis %> </p>
+        <div class="py-3">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-12 col-lg-8 ml-auto">
+                        <article class="entry">
+                            <%- artikel.isiArtikel %>
+                        </article>
+                    </div>
+                    
+                    <div class="col-12 col-lg-3 sidebar mx-auto">
+                        <aside class="small">
+                            <h2 class="h5 mb-4">Artikel Lainnya</h2>
+                            <% artikels.forEach(artikel => { %>
+                             
+                                <div class="media pb-2 mb-2 border-bottom">
+                                    <a href="/articles/<%= artikel.judul %>">
+                                        <img src="/uploads/images/<%= artikel.thumbnail %> " class="img-fluid mb-2"  style="object-fit: cover; height: 130px; width: 100%;"  alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <a href="/articles/<%= artikel.judul %>" class="h6 mt-2"><%= artikel.judul %> </a>
+                                        <p class="mt-1" style="max-height:3em;overflow:hidden; opacity: .6; font-weight: 200;"><%= artikel.deskripsi %> </p>
+                                    </div>
+                                </div>
+
+                            <% }) %>
+                        </aside>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <% } %> 
+    
+</div>

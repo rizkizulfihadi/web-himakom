@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="/assets/css/main/app.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-pengurus.css">
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/assets/img/logo.webp" type="image/png">
+    <title><%= title %> </title>
+</head>
+<body>
+  <nav>
+    <div class="nav-brand">
+        <img src="/assets/img/logo.webp" alt="logo">
+        <a href="/"><span>{</span>HIMAKOM<span>}</span></a>
+    </div>
+    <div class="nav-menu">
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <div class="dropdown d-inline  dropdown-custom">
+                <a class="dropdown-toggle" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                  KEPENGURUSAN
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                  <li><a class="dropdown-item custom" href="/inti">Divisi Inti</a></li>
+                  <li><a class="dropdown-item custom" href="/pmb">Bidang PMB</a></li>
+                  <li><a class="dropdown-item custom" href="/humas">Bidang Humas</a></li>
+                  <li><a class="dropdown-item custom" href="/kominfo">Bidang Kominfo</a></li>
+                </ul>
+            </div>
+            <li><a href="/articles">ARTIKEL</a></li>
+            <li><a href="/news">BERITA</a></li>
+            <li><a href="/galeri">GALLERY</a></li>
+        </ul>
+    </div>
+    <div class="toggle">
+        <div class="mode-toggle">
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+        <div class="menu-toggle">
+            <input type="checkbox" data-bs-toggle="offcanvas" data-bs-target="#navbar-mobile" >
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Navbar menu mobile off canvas  -->
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="navbar-mobile" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+    </div>
+    <div class="offcanvas-body mt-5 fs-5">
+        <ul class="navbar-nav justify-content-center">
+            <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/articles">ARTIKEL</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/news">BERITA</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/galeri">GALLERY</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                KEPENGURUSAN
+            </a>
+            <ul class="dropdown-menu mobile">
+                <li><a class="dropdown-item custom" href="/inti">Divisi Inti</a></li>
+                <li><a class="dropdown-item custom" href="/pmb">Bidang PMB</a></li>
+                <li><a class="dropdown-item custom" href="/humas">Bidang Humas</a></li>
+                <li><a class="dropdown-item custom" href="/kominfo">Bidang Kominfo</a></li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+    
+        <%- body  %> 
+    
+
+    
+  <!-- footer -->
+  <div class="students">
+    <div class="text">
+        <h1>Butuh Bantuan Lebih Lanjut ?</h1>
+    </div>
+    <div class="button">
+        <a href="">HUBUNGI KAMI</a>
+    </div>
+</div>
+<footer class="footer">
+    <div class="contact">
+        <div class="address-footer">
+            <h4>Address</h4>
+            <p class="description">Himakom Poljan adalah Himpunan Mahasiswa Teknik Komputer yang bertugas menjadi wadah aspirasi mahasiswa dan membuat inovasi di berbagai bidang.</p>
+            <p><i class="fa fa-phone footer-icon"></i> +62 8231 5940 406</p>
+            <p><i class="fa fa-envelope footer-icon"></i>  himakom@poljan.ac.id</p>
+            <p><i class="fa fa-map-marker footer-icon"></i> Jalan Penghulu H. Hasan Mustofa No. 38 Bandung 40124</p>
+        </div>
+        <div class="study-footer">
+            <h4>Links</h4>
+            <p><i class="fa fa-long-arrow-right footer-icon"></i> Home</p>
+            <p><i class="fa fa-long-arrow-right footer-icon"></i> Kepengurusan</p>
+            <p><i class="fa fa-long-arrow-right footer-icon"></i> Artikel</p>
+            <p><i class="fa fa-long-arrow-right footer-icon"></i> Berita</p>
+            <p><i class="fa fa-long-arrow-right footer-icon"></i> Galeri</p>
+            <p><i class="fa fa-long-arrow-right footer-icon"></i> Video</p>
+        </div>
+        <div class="links-footer">
+            <h4>Kepengurusan</h4>
+            <p><i class="fa fa-long-arrow-right footer-icon"></i> Divisi inti</p>
+            <p><i class="fa fa-long-arrow-right footer-icon"></i> Humas</p>
+            <p><i class="fa fa-long-arrow-right footer-icon"></i> Seksi Acara</p>
+            <p><i class="fa fa-long-arrow-right footer-icon"></i> Seksi Konsumsi</p>
+            <p><i class="fa fa-long-arrow-right footer-icon"></i> Kominfo</p>
+        </div>
+        <div class="email-footer">
+            <h4>Email</h4>
+            <p>Enter your email and we'll send you more information.</p>
+            <input type="email" placeholder="Input Your Email">
+            <a href="">SUBSCRIBE</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Copyright 2022 Himakom Poljan | All rights reserved</p>
+    </div>
+</footer>
+
+<section class="social-media-floating" onclick="toggleBtnSocial()">
+<div class="action">
+  <i class="fas fa-plus" id="add"></i>
+  <i class="fas fa-times" id="remove"></i>
+</div>
+<div class="btns">
+  <a href="#" class="btn" style="background: #1DA1F2;">
+    <i class="fab fa-twitter" ></i>
+  </a>
+  <a href="#" class="btn" style="background: #25D366;">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="#" class="btn"style="background: #1877F2;">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="#" class="btn"style="background: #CD201F;">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="#" class="btn"style="background: #E4405F;">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+</section>
+</div>
+<script src="/assets/js/bootstrap.js"></script>
+<script src="/assets/js/swiper-bundle.min.js"></script>
+<script src="/assets/js/lightbox-plus-jquery.min.js"></script>
+<script src="/assets/js/script.js"></script>
+</body>
+</html>

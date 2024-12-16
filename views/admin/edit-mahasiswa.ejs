@@ -1,0 +1,329 @@
+<div id="app">
+    <div id="sidebar" class="active">
+        <div class="sidebar-wrapper active">
+            <div class="sidebar-header position-relative">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <a href="#"><img src="/assets/images/logo/favicon.png" alt="Logo" srcset=""></a>
+                    </div>
+                    <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--system-uicons" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 14.5c2.219 0 4-1.763 4-3.982a4.003 4.003 0 0 0-4-4.018c-2.219 0-4 1.781-4 4c0 2.219 1.781 4 4 4zM4.136 4.136L5.55 5.55m9.9 9.9l1.414 1.414M1.5 10.5h2m14 0h2M4.135 16.863L5.55 15.45m9.899-9.9l1.414-1.415M10.5 19.5v-2m0-14v-2" opacity=".3"></path><g transform="translate(-210 -1)"><path d="M220.5 2.5v2m6.5.5l-1.5 1.5"></path><circle cx="220.5" cy="11.5" r="4"></circle><path d="m214 5l1.5 1.5m5 14v-2m6.5-.5l-1.5-1.5M214 18l1.5-1.5m-4-5h2m14 0h2"></path></g></g></svg>
+                        <div class="form-check form-switch fs-6">
+                            <input class="form-check-input  me-0" type="checkbox" id="toggle-dark" >
+                            <label class="form-check-label" ></label>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m17.75 4.09l-2.53 1.94l.91 3.06l-2.63-1.81l-2.63 1.81l.91-3.06l-2.53-1.94L12.44 4l1.06-3l1.06 3l3.19.09m3.5 6.91l-1.64 1.25l.59 1.98l-1.7-1.17l-1.7 1.17l.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95l2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85c-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14c.4-.4.82-.76 1.27-1.08c.75-.53 1.93.36 1.85 1.19c-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82c-2.81 3.14-2.7 7.96.31 10.98c3.02 3.01 7.84 3.12 10.98.31Z"></path></svg>
+                    </div>
+                    
+                    <div class="sidebar-toggler  x">
+                        <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                    </div>
+                </div>
+                <h5 class="mt-2"><%= user.namaLengkap %> </h5>
+                
+            </div>
+            <div class="sidebar-menu">
+                <ul class="menu">
+                    <li class="sidebar-title">Menu</li>
+                    
+                    <li
+                        class="sidebar-item">
+                        <a href="/dashboard" class='sidebar-link'>
+                            <i class="bi bi-grid-fill"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li
+                        class="sidebar-item">
+                        <a href="/dataUser" class='sidebar-link'>
+                            <i class="bi bi-person-circle"></i>
+                            <span>Data User</span>
+                        </a>
+                    </li>
+                    <li
+                        class="sidebar-item">
+                        <a href="/dataRegister" class='sidebar-link'>
+                            <i class="bi bi-person-lines-fill"></i>
+                            <span>Data Register</span>
+                        </a>
+                    </li>
+                    <li
+                        class="sidebar-item active">
+                        <a href="/dataMahasiswa" class='sidebar-link'>
+                            <i class="bi bi-stack"></i>
+                            <span>Data Mahasiswa</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-title">Pages</li>  
+                    <li
+                        class="sidebar-item">
+                        <a href="/programKerja" class='sidebar-link'>
+                            <i class="bi bi-briefcase-fill"></i>
+                            <span>Program Kerja</span>
+                        </a>
+                    </li>
+                    <li
+                        class="sidebar-item">
+                        <a href="/event" class='sidebar-link'>
+                            <i class="bi bi-calendar-event-fill"></i>
+                            <span>Event</span>
+                        </a>
+                    </li>
+                    <li
+                        class="sidebar-item">
+                        <a href="/gallery" class='sidebar-link'>
+                            <i class="bi bi-images"></i>
+                            <span>Gallery</span>
+                        </a>
+                    </li>
+                    <li
+                        class="sidebar-item">
+                        <a href="/artikel" class='sidebar-link'>
+                            <i class="bi bi-pen-fill"></i>
+                            <span>Artikel</span>
+                        </a>
+                    </li>
+                    <li
+                        class="sidebar-item">
+                        <a href="/berita" class='sidebar-link'>
+                            <i class="bi bi-newspaper"></i>
+                            <span>Berita</span>
+                        </a>
+                    </li>
+                    <hr>
+                    <li
+                        class="sidebar-item">
+                        <button  class='btn btn-outline-primary w-100' data-bs-toggle="modal" data-bs-target="#logout">
+                            <i class="bi bi-box-arrow-in-left"></i>
+                            <span>Keluar</i></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <header class="mb-3">
+            <a href="#" class="burger-btn d-block d-xl-none">
+                <i class="bi bi-justify fs-3"></i>
+            </a>
+        </header>
+        <div class="page-heading">
+            <!-- Workspace -->
+            <div class="row">
+                <div class="col-12 col-md-6 order-md-1 order-last">
+                    <h3>Data Mahasiswa</h3>
+                </div>
+                <div class="col-12 col-md-6 order-md-2 order-first">
+                    <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data Mahasiswa</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            
+            <% if ( typeof errors != 'undefined') { %>
+                <p class="badge bg-danger text-center" role="alert">
+                    <% errors.forEach(error => { %>
+                        <%= error.msg %>
+                    <% }) %>
+                    </p>
+            <% } %>
+            <section class="section" id="multiple-column-form">
+                <div class="card">
+                    <div class="container">
+                        <div class="main-body">
+                            <form method="post" action="/dataMahasiswa?_method=PUT" enctype="multipart/form-data"  class="form" data-parsley-validate>
+                                <input type="hidden" name="_id" value="<%= mahasiswa._id %>">
+                                <input type="hidden" name="oldNim" value="<%= mahasiswa.oldNim || mahasiswa.nim %>">
+                                <div class="row justify-content-center">
+                                    <div class="row ">
+                                        <div class="form-group">
+                                            
+                                                <div class="avatar-upload">
+                                                    <div class="avatar-edit">
+                                                        <input type="file" name="image" id="imageUpload" value="<%= mahasiswa.image %>">
+                                                        
+                                                        <label for="imageUpload"></label>
+                                                    </div>
+                                                    <div class="avatar-preview">
+                                                        <div id="imagePreview" style="background-image: url(/uploads/images/<%= mahasiswa.image %>);">  
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-7  ">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                
+                                                <div class="card">
+                                                    <div class="card">
+                                                       
+                                                        <div class="row mb-3">
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group mandatory">
+                                                                    <label for="nama" class="form-label">Nama</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <input type="text" id="nama" class="form-control" placeholder="Masukkan nama" name="nama" data-parsley-required="true" value="<%= mahasiswa.nama %>">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group mandatory">
+                                                                    <label for="nim" class="form-label">NIM</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <input type="text" id="nim" class="form-control" placeholder="Masukkan NIM" name="nim" data-parsley-required="true" value="<%= mahasiswa.nim %>">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group mandatory">
+                                                                    <label for="kedudukan" class="form-label">Kedudukan</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <select class="form-select" id="kedudukan" name="kedudukan" data-parsley-required="true" >
+                                                                    <option selected value="<%= mahasiswa.kedudukan %>"><%= mahasiswa.kedudukan %></option>
+                                                                    <option value="Mahasiswa">Mahasiswa</option>
+                                                                    <option value="Ketua Himakom">Ketua Himakom</option>
+                                                                    <option value="Wakil Ketua Himakom">Wakil Ketua Himakom</option>
+                                                                    <option value="Sekretaris Jendral">Sekretaris Jendral</option>
+                                                                    <option value="Sekretaris Umum">Sekretaris Umum</option>
+                                                                    <option value="Bendahara">Bendahara</option>
+                                                                    <option value="Wakil Bendahara">Wakil Bendahara</option>
+                                                                    <option value="Kepala Bidang PMB">Kepala Bidang PMB</option>
+                                                                    <option value="Kepala Bidang Humas">Kepala Bidang Humas</option>
+                                                                    <option value="Kepala Bidang Kominfo">Kepala Bidang Kominfo</option>
+                                                                    <option value="Wakil Kepala Bidang PMB">Wakil Kepala Bidang PMB</option>
+                                                                    <option value="Wakil Kepala Bidang Humas">Wakil Kepala Bidang Humas</option>
+                                                                    <option value="Wakil Kepala Bidang Kominfo">Wakil Kepala Bidang Kominfo</option>
+                                                                    <option value="Staff PMB">Staff PMB</option>
+                                                                    <option value="Staff Humas">Staff Humas</option>
+                                                                    <option value="Staff Kominfo">Staff Kominfo</option>
+                                                                  </select>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group mandatory">
+                                                                    <label for="country-floating" class="form-label">Asal /Alamat</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <input type="text" id="alamat" class="form-control" name="alamat" placeholder="Alamat" data-parsley-required="true" value="<%= mahasiswa.alamat %>">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group mandatory">
+                                                                    <label for="tanggalLahir" class="form-label">Tgl Lahir</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <input type="date" id="tanggalLahir" class="form-control" name="tanggalLahir" placeholder="Tanggal lahir" data-parsley-required="true" value="<%= mahasiswa.tanggalLahir %>">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group mandatory">
+                                                                    <label for="prodi" class="form-label">Prodi</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <select class="form-select" id="prodi" name="prodi"  data-parsley-required="true" >
+                                                                    <option value="<%= mahasiswa.prodi %>"><%= mahasiswa.prodi %> </option>
+                                                                    <option value="Teknik Komputer A">Tekom A</option>
+                                                                    <option value="Teknik Komputer B">Tekom B</option>
+                                                                    <option value="Teknik Komputer C">Tekom C</option>
+                                                                    <option value="Teknik Komputer D">Tekom D</option>
+                                                                    <option value="Teknik Komputer E">Tekom E</option>
+                                                                  </select>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                        <div class="row ">
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
+                                                                    <label for="moto" class="form-label">Moto / Quotes</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <textarea class="form-control" id="moto"  rows="3" name="moto" placeholder="moto "><%= mahasiswa.moto %> </textarea>
+                                                            </div>
+                                                    
+                                                        </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-3 col-sm-8 mt-4">
+                    
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <h6 class="mb-0 mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github me-2 icon-inline"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></h6>
+                                                <span class="text-secondary"><input type="text" class="form-control col-12 form-control-sm mt-3 flex-wrap" name="github" value="<%= mahasiswa.github %>"></span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter me-2 icon-inline text-info"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></h6>
+                                                <span class="text-secondary"><input type="text" class="form-control form-control-sm mt-3" name="twitter" value="<%= mahasiswa.twitter %>"></span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram me-2 icon-inline text-danger"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></h6>
+                                                <span class="text-secondary"><input type="text" class="form-control form-control-sm mt-3" name="instagram" value="<%= mahasiswa.instagram %>"></span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook me-2 icon-inline text-primary"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></h6>
+                                                <span class="text-secondary"><input type="text" class="form-control form-control-sm mt-3" name="facebook" value="<%= mahasiswa.facebook %>"></span>
+                                            </li>
+                                          
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <h6 class="mb-0"><i class="bi bi-line me-2" style="font-size: 24px; color: #00C300;"></i></h6>
+                                                <span class="text-secondary"><input type="text" class="form-control form-control-sm my-3" name="line" value="<%= mahasiswa.line %>"> </span>
+                                            </li>
+                                        </ul>
+                                        <div class="row mt-5 mb-5">
+                                            <div class="col-12 d-flex justify-content-end">
+                                                <button type="submit" class="btn btn-primary me-1 mb-1">Ubah</button>
+                                                <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="logout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+        <div class="modal-body text-center mt-3">
+        
+            <h3>Yakin Ingin Keluar?</h3>
+            <p>Anda harus login lagi untuk masuk</p>
+        </div>
+        <div class="modal-footer">
+            <a href="/logout" class="btn btn-primary">Ya saya ingin keluar</a>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+        </div>
+    </div>
+    </div>
+</div>
